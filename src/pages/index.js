@@ -7,7 +7,7 @@ import AllPosts from "../components/allPosts"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <AllPosts />
+     <AllPosts />
   </Layout>
 )
 

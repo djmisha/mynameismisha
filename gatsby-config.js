@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Misha's Blog`,
-    description: `Sonia's Blog`,
-    author: `@sapphireDevelopment`,
+    title: `Misha Osinovskiy`,
+    description: `The personal website of Misha Osinovskiy`,
+    author: `Misha Osinovskiy`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -42,7 +42,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Dancing Script`,
+            family: `Oswald`,
             variants: [`400`, `700`],
           },
           {

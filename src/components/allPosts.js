@@ -5,6 +5,7 @@ import styled from "styled-components"
 
 const PostsWrap = styled.section`
   display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: space-between;
   article {

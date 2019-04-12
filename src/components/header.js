@@ -10,7 +10,8 @@ const HeaderWrapper = styled.header`
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  align-items: center;
+  background: #90CAF9;
+  margin-bottom: 60px;
   @media (min-width: 768px) {
     flex-direction: column;
     jcustify-content: center;
@@ -31,8 +32,8 @@ const SiteTitle = styled.h1`
   a {
     color: black;
     text-decoration: none;
-    font-family: Dancing Script, cursive;
-    font-weight: 400;
+    font-family: Oswald;
+    font-weight: 700;
   }
 `
 
@@ -71,10 +72,21 @@ const NavItem = styled.li`
   }
   a {
     text-decoration: none;
-    color: #000;
     font-family: "Open Sans", sans-serif;
-    color: #777;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2em;
   }
+  @media (min-width: 768px) {
+    a {
+      font-size: 1em;
+      color: #000;
+    }
+    &:first-of-type {
+      display:none;
+    }
+  }
+
 `
 // siteTitle, menu
 class Header extends React.Component {
@@ -140,7 +152,7 @@ class Header extends React.Component {
           {this.state.open[0] ? (
             <NavItems>
               <NavItem onClick={this.navItemClicked.bind(this)}>
-                <Link to="/">Home</Link>
+                <Link to="/">Misha</Link>
               </NavItem>
               {this.props.menu.map(item =>
                 item.object_slug !== "home" ? (
