@@ -10,30 +10,21 @@ const HeaderWrapper = styled.header`
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
-  background: #90CAF9;
-  margin-bottom: 60px;
-  @media (min-width: 768px) {
-    flex-direction: column;
-    jcustify-content: center;
-  }
-  @media (min-width: 1020px) {
-    padding: 20px calc(20px + (50% - (1020px / 2)));
-  }
+  background: transparent;
+  margin-bottom: 40px;
   .hamburger {
     z-index: 20;
   }
 `
 
-const SiteTitle = styled.h1`
-  margin-bottom: 0;
-  @media (min-width: 768px) {
-    margin-bottom: 1.45rem;
-  }
+const SiteTitle = styled.span`
+  margin: 0;
   a {
     color: black;
     text-decoration: none;
     font-family: Oswald;
-    font-weight: 700;
+    font-weight: 400;
+    font-size: 1.2em;
   }
 `
 
@@ -57,38 +48,26 @@ const NavItems = styled.ul`
   display: flex;
   align-items: center;
   padding-top: 100px;
-  @media (min-width: 768px) {
+  @media (min-width: 2800px) {
     padding-top: 0;
     position: static;
-    background: none;
+    background: transparent;
     flex-direction: row;
   }
 `
 
 const NavItem = styled.li`
-  margin: 0;
-  @media (min-width: 768px) {
-    margin-right: 10px;
-  }
+  margin: 10px 0;
   a {
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
-    color: #fff;
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 2em;
+    color: #fff;
   }
-  @media (min-width: 768px) {
-    a {
-      font-size: 1em;
-      color: #000;
-    }
-    &:first-of-type {
-      display:none;
-    }
-  }
-
 `
-// siteTitle, menu
+/* Main Mavigatio and Site Title */
+
 class Header extends React.Component {
   constructor(props) {
     super(props)
@@ -117,14 +96,14 @@ class Header extends React.Component {
 
   windowResize() {
     this.setState({
-      isDesktop: window.innerWidth >= 768,
-      open: window.innerWidth >= 768 ? [1] : [0],
+      isDesktop: window.innerWidth >= 2800,
+      open: window.innerWidth >= 2800 ? [1] : [0],
     })
   }
 
   navItemClicked() {
     this.setState({
-      open: window.innerWidth >= 768 ? [1] : [0],
+      open: window.innerWidth >= 2800 ? [1] : [0],
     })
   }
 

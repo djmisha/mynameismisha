@@ -14,7 +14,7 @@ const Layout = ({ children }) => (
             title
           }
         }
-        wordpressWpApiMenusMenusItems(name: { eq: "Main Navigation" }) {
+        wordpressWpApiMenusMenusItems(name: { eq: "React Navigation" }) {
           items {
             wordpress_id
             title
@@ -42,7 +42,7 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()}, Built by
+            © {new Date().getFullYear()}
             {` `}
             <a href="https://www.mynameismisha.com">Misha Osinovskiy</a>
           </footer>
