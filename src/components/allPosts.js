@@ -4,21 +4,13 @@ import Img from "gatsby-image"
 import styled from "styled-components"
 
 const PostsWrap = styled.section`
-  display: flex;
-  display: none;
-  flex-wrap: wrap;
-  justify-content: space-between;
   article {
-    width: 30%;
-    min-width: 300px;
-    &:first-of-type {
-      width: 100%;
-      .gatsby-image-wrapper {
-        height: auto;
-      }
+    text-align: center;
+    p {
+      display:none;
     }
-    .gatsby-image-wrapper {
-      height: 250px;
+    a {
+      text-decoration: none;
     }
   }
 `
