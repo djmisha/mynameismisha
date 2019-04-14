@@ -6,7 +6,9 @@ import AllPosts from "../components/allPosts"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Misha Osinovskiy" keywords={[`gatsby`, `application`, `react`]} />
+     <p>Welcome to the personal website of Misha Osinovskiy</p>
+	<p>From the blog...</p>
      <AllPosts />
   </Layout>
 )

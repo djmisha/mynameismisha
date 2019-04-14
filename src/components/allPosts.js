@@ -5,9 +5,7 @@ import styled from "styled-components"
 
 const PostsWrap = styled.section`
   article {
-    text-align: center;
     p {
-      display:none;
     }
     a {
       text-decoration: none;
