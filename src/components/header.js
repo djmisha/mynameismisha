@@ -41,14 +41,15 @@ const NavItems = styled.ul`
   left: 0;
   right: 0;
   padding-left: 20px;
-  background: black;
+  background: white;
+  border: 10px solid #eee;
   z-index: 10;
   top: 0;
   bottom: 0;
   display: flex;
   align-items: center;
   padding-top: 100px;
-  @media (min-width: 2800px) {
+  @media (min-width: 5000px) {
     padding-top: 0;
     position: static;
     background: transparent;
@@ -62,11 +63,11 @@ const NavItem = styled.li`
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    font-size: 2em;
-    color: #fff;
+    font-size: 1.4em;
+    color: #000;
   }
 `
-/* Main Mavigatio and Site Title */
+/* Main Navigation and Site Title */
 
 class Header extends React.Component {
   constructor(props) {
@@ -96,14 +97,14 @@ class Header extends React.Component {
 
   windowResize() {
     this.setState({
-      isDesktop: window.innerWidth >= 2800,
-      open: window.innerWidth >= 2800 ? [1] : [0],
+      isDesktop: window.innerWidth >= 5000,
+      open: window.innerWidth >= 5000 ? [1] : [0],
     })
   }
 
   navItemClicked() {
     this.setState({
-      open: window.innerWidth >= 2800 ? [1] : [0],
+      open: window.innerWidth >= 5000 ? [1] : [0],
     })
   }
 
@@ -123,7 +124,7 @@ class Header extends React.Component {
               height={20}
               strokeWidth={2}
               rotate={0}
-              color={this.state.open[0] ? "#fff" : "#000"}
+              color={this.state.open[0] ? "#000" : "#000"}
               borderRadius={5}
               animationDuration={0.3}
             />
@@ -131,7 +132,7 @@ class Header extends React.Component {
           {this.state.open[0] ? (
             <NavItems>
               <NavItem onClick={this.navItemClicked.bind(this)}>
-                <Link to="/">Misha</Link>
+                <Link to="/">Home</Link>
               </NavItem>
               {this.props.menu.map(item =>
                 item.object_slug !== "home" ? (
