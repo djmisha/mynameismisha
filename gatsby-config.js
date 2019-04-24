@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Misha Osinovskiy`,
-    description: `Web Designer, DJ, Musician, Media Arts in San Diego CA.`,
+    description: `Web Developer, DJ, Musician, Media Arts in San Diego CA.`,
     author: `Misha Osinovskiy`,
   },
   plugins: [
