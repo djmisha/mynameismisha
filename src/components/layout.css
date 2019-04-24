@@ -76,8 +76,14 @@ h2 {
   font-size: 1.2em;
 }
 
+i {font-style: italic;}
+
 p {
   margin-bottom: 1.5em;
+}
+
+article p {
+  display: none;
 }
 
 strong {

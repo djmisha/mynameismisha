@@ -55,7 +55,7 @@ const AllPosts = () => (
                 />
               ) : null}
               <h2>{item.node.title}</h2>
-              <p
+              <div
                 dangerouslySetInnerHTML={{
                   __html: item.node.excerpt,
                 }}
