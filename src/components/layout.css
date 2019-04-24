@@ -55,6 +55,7 @@ body {
   font-size: 15px;
   line-height: 25px;
   border: 10px solid #eee;
+  min-height: calc(100vh - 20px);
 }
 
 a {
@@ -82,8 +83,14 @@ p {
   margin-bottom: 1.5em;
 }
 
-ul {
+main div ul, main div ol {
   margin: 40px;
+  list-style: bullet;
+}
+
+main div ul li, main div ol li {
+  margin-bottom: 10px;
+
 }
 
 article p {

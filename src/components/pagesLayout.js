@@ -9,7 +9,7 @@ export default class Page extends Component {
     const { data } = this.props
     return (
       <Layout>
-        <SEO title="Page" />
+        <SEO title="{data.wordpressPage.title}" />
         <h1>{data.wordpressPage.title}</h1>
         <div
           dangerouslySetInnerHTML={{

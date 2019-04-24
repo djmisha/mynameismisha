@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AllPosts from "../components/allPosts"
 
-const IndexPage = () => (
+const IndexPage = () => (	
   <Layout>
    		<SEO title="Misha Osinovskiy" keywords={[`web designer`,`web developer`, `DJ`, `Misha Osinovskiy`]} />
    		 	<p>👋👋👋 Hello!  My name is Misha and I would like to welcome you to my personal website.</p>
