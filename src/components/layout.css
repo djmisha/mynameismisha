@@ -85,11 +85,11 @@ p {
 
 main div ul, main div ol {
   margin: 40px;
-  list-style: bullet;
+  list-style-type: disc;
 }
 
 main div ul li, main div ol li {
-  margin-bottom: 10px;
+  margin-bottom: 10px; 
 }
 
 article p {
