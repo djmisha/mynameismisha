@@ -15,7 +15,7 @@ const PostsWrap = styled.section`
 
 const POST_QUERY = graphql`
   query postListQuery {
-    allWordpressPost(limit: 5, sort: { order: DESC, fields: [date] }) {
+    allWordpressPost(limit: 4, sort: { order: DESC, fields: [date] }) {
       edges {
         node {
           id
