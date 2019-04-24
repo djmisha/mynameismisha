@@ -82,6 +82,10 @@ p {
   margin-bottom: 1.5em;
 }
 
+ul {
+  margin: 40px;
+}
+
 article p {
   display: none;
 }
