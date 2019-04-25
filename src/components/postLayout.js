@@ -11,7 +11,7 @@ export default class Post extends Component {
 
     return (
       <Layout>
-        <SEO title="Posts" />
+        <SEO title={data.wordpressPost.title} />
         {data.wordpressPost.featured_media !== null ? (
           <Img
             fluid={

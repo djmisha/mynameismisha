@@ -49,7 +49,7 @@ module.exports = {
           variants: [`400`, `700`],
         },
         {
-          family: `Open Sans`,
+          family: `Lora`,
           variants: [`400`, `700`],
         },
         ],

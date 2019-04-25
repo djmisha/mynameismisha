@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export default function HamburgerMenu(props) {
+export default function HamMenu(props) {
   const width = `${props.width || 36}px`,
     height = `${props.height || 30}px`,
     halfHeight = `${parseInt(height.replace("px", "")) / 2}px`,
@@ -63,7 +63,7 @@ export default function HamburgerMenu(props) {
   )
 }
 
-HamburgerMenu.propTypes = {
+HamMenu.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   menuClicked: PropTypes.func.isRequired,
   width: PropTypes.number,

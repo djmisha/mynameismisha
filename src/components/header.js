@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import styled from "styled-components"
-import HamburgerMenu from "./hamburger-menu"
+import HamMenu from "./menu"
 
 const HeaderWrapper = styled.header`
   padding: 20px;
@@ -117,7 +117,7 @@ class Header extends React.Component {
         </SiteTitle>
         <nav>
           {!isDesktop ? (
-            <HamburgerMenu
+            <HamMenu
               isOpen={this.state.open[0]}
               menuClicked={this.handleClick.bind(this, 0)}
               width={36}
